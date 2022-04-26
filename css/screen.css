@@ -216,6 +216,11 @@ a:focus {
   background-color: #f7f7f7;
 }
 
+.o-row--graidient-1 {
+  background: linear-gradient(to top right, #3887f7, #5051d8);
+  color: white;
+}
+
 /*
     Objects: Container
     ---
@@ -575,6 +580,18 @@ a:focus {
 .c-link-cta:visited,
 .c-link-cta:active {
   color: #7373f5;
+}
+
+.c-link-cta--inverse,
+.c-link-cta--inverse:visited,
+.c-link-cta--inverse:active,
+.c-link-cta--inverse:hover {
+  color: #fff;
+}
+
+.c-link-cta--inverse::after,
+.c-link-cta--inverse:hover::after {
+  background-color: #fff;
 }
 
 .c-link-cta::after {
