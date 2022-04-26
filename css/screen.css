@@ -397,6 +397,10 @@ a:focus {
   #COMPONENTS
 \*------------------------------------*/
 
+.c-center {
+  text-align: center;
+}
+
 /*
     Component: header
     ---
@@ -556,6 +560,65 @@ a:focus {
   .c-lead--xxxl {
     font-size: 66px;
     line-height: 72px;
+  }
+}
+
+/*
+    Component: footer
+    ---
+    Main footer of the website
+*/
+
+.c-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c-footer__logo {
+  width: 100%;
+}
+
+.c-footer__nav {
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .c-footer {
+    justify-content: center;
+
+    align-items: center;
+  }
+
+  .c-footer__logo {
+    display: flex;
+
+    justify-content: center;
+
+    padding: 0 12px;
+  }
+
+  .c-footer__nav {
+    width: auto;
+
+    padding: 0 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .c-footer {
+    justify-content: space-between;
+  }
+
+  .c-footer__nav {
+    padding: 0;
+  }
+
+  .c-footer__logo + .c-footer__nav {
+    order: -1;
+  }
+
+  .c-footer__logo {
+    width: auto;
   }
 }
 
